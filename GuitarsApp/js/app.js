@@ -21,7 +21,14 @@ const createDiv = (guitar) => {
     return div;
 }
 
-//utilizando interadores
 db.forEach( guitar => {
     divContainer.appendChild( createDiv(guitar) );
 })
+
+const cardClicked = (e) => {
+    console.log(e.target.classList.contains('btn')) {
+        console.log('Le diste al boton')
+    }
+}
+
+divContainer.addEventListener('click', cardClicked)
